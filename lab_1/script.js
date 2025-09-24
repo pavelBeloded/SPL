@@ -52,16 +52,16 @@ null == undefined ? console.log(true) : console.log(false);
 // #5 ---------------
 console.log("-------------------");
 
-// const teacherName = "Василий";
-// let userInput = prompt("Введите имя преподавателя");
-// let splittedInput = userInput.split(" ");
+const teacherName = "Василий";
+let userInput = prompt("Введите имя преподавателя");
+let splittedInput = userInput.split(" ");
 
-// splittedInput.forEach((elem) => {
-//   if (elem.toLowerCase() == teacherName.toLowerCase()) {
-//     alert("Данные верны");
-//     return;
-//   }
-// });
+splittedInput.forEach((elem) => {
+  if (elem.toLowerCase() == teacherName.toLowerCase()) {
+    alert("Данные верны");
+    return;
+  }
+});
 
 //  #6 -----------
 console.log("-------------------");
@@ -102,7 +102,7 @@ console.log(5 + "mm");
 console.log(8 / Infinity);
 console.log(9 * "\n9");
 console.log(null - 1);
-console.log("5" - 2);
+console.log(+"5" + 2);
 console.log("5px" - 3);
 console.log(true - 3);
 console.log(7 || 0);
@@ -155,7 +155,7 @@ function combineParams(param1, param2, param3 = "По умолчанию") {
   return `${param1}, ${param2}, ${param3}`;
 }
 
-let userInput = prompt("Введите третий параметр:");
+userInput = prompt("Введите третий параметр:");
 result = combineParams(userInput, "Второй");
 console.log(result);
 
@@ -170,8 +170,8 @@ function params(a, b) {
   }
 }
 
-const params = function(a, b) {
-  return a === b ? 4 * a : a * b;
-};
+// const params = function(a, b) {
+//   return a === b ? 4 * a : a * b;
+// };
 
-const params = (a, b) => a === b ? 4 * a : a * b;
+// const params = (a, b) => a === b ? 4 * a : a * b;
