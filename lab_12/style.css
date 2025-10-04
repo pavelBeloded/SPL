@@ -1,0 +1,47 @@
+.field {
+  width: 450px;
+  height: 450px;
+  border: 3px solid #000;
+  margin: 150px auto;
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 150px);
+}
+
+.big_sector {
+  /* width: 150px; */
+  /* height: 150px; */
+  border: 2px solid #000;
+  display: grid;
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: repeat(3, 50px);
+}
+
+.small_sector {
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small_sector span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.button {
+    font-size: 22px;
+    padding: 10px 5px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.button.clear {
+    background: #4459ff;
+    color: #e4e4e4;
+}
+
+.button.check {
+    background: #008c3f;
+    color: #e4e4e4;
+}
